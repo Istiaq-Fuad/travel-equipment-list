@@ -81,7 +81,17 @@ body {
   background-color: #e3fef7;
   flex: 2.3;
   border-radius: 0 0 0 0.5rem;
-  /* overflow: scroll; */
+  overflow: scroll;
+}
+
+.items::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.items {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 
 .item {
@@ -114,12 +124,12 @@ body {
 }
 
 .item-label > input:hover {
-  border-color: #135D66;
+  border-color: #135d66;
 }
 
 .item-label > input:checked {
-  border-color: #003C43;
-  background-color: #003C43;
+  border-color: #003c43;
+  background-color: #003c43;
 }
 
 .item-label span {
@@ -168,8 +178,6 @@ body {
   margin: 0.3rem 0;
   border-radius: 0.3rem;
 }
-
-
 
 @media (max-width: 768px) {
   .middle-section {
